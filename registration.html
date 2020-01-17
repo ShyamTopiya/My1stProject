@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="registration.js"></script>
+        <style>
+            .form1
+    {
+        border: 1px solid black;
+        width: 500px;
+        margin-top: 7%;
+    }
+        </style>
+    </head>
+    <body>
+        <center>
+            <form class="form1" id="registrationform">
+            <h1>REGISTRATION</h1><br><br>
+
+            <input type="text" id="name" placeholder="name" required><br><br>
+            <input type="email" id="useremail" placeholder="Email"><br><br>
+            <input type="password" id ="userpassword" placeholder="Password"><br><br>
+            <input type="password" id = "confirmpassword" placeholder="confirmpassword"><br><br>
+            <select name="city" id="city">
+               
+                <option value="rajkot">Rajkot</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="simla">Simla</option>
+            </select><br><br>
+            <select name="state" id="state">
+                
+                <option value="guajrat">Gujarat</option>
+                <option value="maharastra">Maharastra</option>
+                <option value="kashmir">kashmir</option>
+            </select><br><br>
+            <input type="checkbox" id="check">Terms & Condition<br><br>
+            <input type="button" value="Register" style="border-radius: 25px;width: 
+            200px;height: 40px;" onclick="registrationDetail();"><br><br>
+        </center>
+    </form>
+    </body>
+</html>

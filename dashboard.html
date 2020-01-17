@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+    
+    .sidemenu{
+        width: 20%;
+        display: inline;
+        float: left;
+        margin-left: 50px;
+    } 
+    table,tr,td{
+        border: 1px solid black;
+        margin-left: 500px;
+    }
+    .line
+    {
+        border-right: 1px solid black;
+        height: 500px;
+        display: inline;
+        float: left;
+    }
+</style>
+<script src="dashboard.js"></script>
+</head>
+<body>
+    <div class="container"> 
+<div class="sidemenu">
+    <br><br><br>
+    <a onclick="dashboard()" >Dashboard</a><br><br>
+    <a onclick="showuser()">Users</a><br><br>
+</div> 
+<div class="line"></div>   
+<div class="datadiv">
+    <center><h1>DASHBOARD</h1></center>
+    <h3 style="margin-left: 500px;">Add USer</h3>
+    <input type="text" id="name" placeholder="Name">
+    &nbsp&nbsp<input type="email" id="email" placeholder="Email">
+    &nbsp&nbsp<input type="password" id="password" placeholder="Password">
+    &nbsp&nbsp&nbsp&nbspbirthdate<input type="date" id="dateofbirth" placeholder="Birthdate"><br><br>
+    <input type="button" value="Add User" style="margin-left: 590px;" onclick="adduser();">
+    <table id="display_table"></table>
+</div>
+</div> 
+</body>
+</html>

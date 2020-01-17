@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+    .container
+    {
+        border: 1px solid black;
+        width: 500px;
+        margin-top: 10%;
+    }
+</style>
+<script src="login.js"></script>
+</head>
+<body>
+<center>
+    <div class="container">
+        <h1>LOGIN</h1>
+        <form>
+        <input type="email" placeholder="Email" id="loginemail" required ><br><br>
+        <input type="password" placeholder="Password" id="loginpassword" onkeyup="checkadmin();"><br><br>
+
+        <input type="button" value="LOGIN" ><br>
+        <p>OR</p>
+        <input type="button" value="REGISTER NOW" id="registrationbutton" onclick="registrationCheck();"><br><br>
+    </div>
+</form>
+</center>    
+
+</body>
+</html>
